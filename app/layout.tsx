@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} | Aannemer & Projectregie`,
     description: SITE_DESC,
-    images: [{ url: "/og/home.jpg" }], // plaats dit bestand in /public/og/home.jpg
+    images: [{ url: "/montagesinhuis.jpg" }], // plaats dit bestand in /public/og/home.jpg
     locale: "nl_NL",
   },
   twitter: {
