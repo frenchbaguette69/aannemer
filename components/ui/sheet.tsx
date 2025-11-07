@@ -110,11 +110,14 @@ export function SheetClose({
   const { setOpen } = useSheetContext();
 
   if (asChild && isValidElement(children)) {
-    const child = children as ReactElement;
+    // Narrow to elements that may have an onClick prop
+    type Clickable = { onClick?: (e: ReactMouseEvent<any>) => void };
+
+    const child = children as ReactElement<Clickable>;
     return cloneElement(child, {
-      ...child.props,
+      // no need to spread child.props
       onClick: (event: ReactMouseEvent<HTMLElement>) => {
-        child.props?.onClick?.(event);
+        child.props.onClick?.(event);
         onClick?.(event as unknown as ReactMouseEvent<HTMLButtonElement>);
         setOpen(false);
       },
@@ -135,3 +138,4 @@ export function SheetClose({
     </button>
   );
 }
+
