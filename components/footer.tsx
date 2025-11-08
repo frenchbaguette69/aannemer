@@ -69,10 +69,10 @@ export function Footer() {
       </div>
       <div className="border-t py-4 text-center text-xs text-slate-500">
   © {new Date().getFullYear()} JN Arbeidsbemiddeling. Alle rechten voorbehouden. <br />
-  Website laten maken door{" "}
+  <p className="text-white">Website laten maken door{" "}</p>
   <a
     href="https://upseo.nl"
-    className="text-emerald-600 hover:underline"
+    className="text-white"
     target="_blank"
     rel="dofollow"
   >
