@@ -78,6 +78,7 @@ export function Footer() {
   >
     UPSEO
   </a>
+  <p className="mt-1">Partner: <a href="https://mjrenovatie.nl" target="_blank" rel="noopener" className="hover:text-slate-900">MJ Renovatie</a></p>
   .
 </div>
 
