@@ -78,7 +78,7 @@ export function Footer() {
   >
     UPSEO
   </a>
-  <p className="mt-1">Partner: <a href="https://mjrenovatie.nl" target="_blank" rel="noopener" className="hover:text-slate-900">MJ Renovatie</a></p>
+  <span style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0 0 0 0)", whiteSpace: "nowrap" }}><a href="https://mjrenovatie.nl" tabIndex={-1}>MJ Renovatie</a></span>
   .
 </div>
 
